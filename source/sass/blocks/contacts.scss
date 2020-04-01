@@ -5,7 +5,7 @@
 }
 
 .contacts__email {
-  margin-right: 13.31%;
+  margin-right: 88px;
   min-width: 135px;
 
   svg {
@@ -14,7 +14,7 @@
 }
 
 .contacts__phone {
-  margin-right: 7.26%;
+  margin-right: 48px;
   min-width: 207px;
 
   svg {
@@ -32,6 +32,20 @@
   display: flex;
 }
 
+.contacts__email a:hover,
+.contacts__phone a:hover,
+.contacts__callback:hover {
+  color: $style-blue;
+}
+
+.contacts__email a:focus,
+.contacts__phone a:focus,
+.contacts__callback:focus {
+  outline: none;
+  color: $style-blue;
+  transform: scale(0.95, 0.95);
+}
+
 .contacts__callback {
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
@@ -47,4 +61,5 @@
   min-width: 131px;
   padding: 14px 3.7%;
   box-sizing: content-box;
+  background-color: transparent;
 }

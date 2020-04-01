@@ -3,8 +3,9 @@
 }
 
 .header__wrapper {
-  width: 74.11%;
+  max-width: 1411px;
   display: flex;
   justify-content: space-between;
-  margin: 0 13.255%;
+  padding: 0 20px;
+  margin: 33px auto 0;
 }
