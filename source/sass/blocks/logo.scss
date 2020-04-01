@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  align-items: center;
+  width: 202px;
+
+  svg {
+    margin-right: 16px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.logo__header {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.logo__description {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+}
