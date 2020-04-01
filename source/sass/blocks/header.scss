@@ -6,6 +6,20 @@
   max-width: 1411px;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 50px;
   margin: 33px auto 0;
+}
+
+@media (max-width: 1023px) {
+  .header__wrapper {
+    margin-top: 18px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__wrapper {
+    padding: 0 18px;
+    margin-top: 16px;
+  }
 }
