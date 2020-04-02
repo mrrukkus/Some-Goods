@@ -33,7 +33,7 @@
   color: #788891;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile) {
   .logo svg {
     width: 38px;
     height: 38px;

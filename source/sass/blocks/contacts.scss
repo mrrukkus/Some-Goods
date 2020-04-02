@@ -78,7 +78,7 @@
   background-color: transparent;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $tablet) {
   .contacts {
     width: 82px;
   }
@@ -115,7 +115,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mobile) {
   .contacts {
     width: 71px;
   }
