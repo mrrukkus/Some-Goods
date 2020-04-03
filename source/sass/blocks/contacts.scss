@@ -8,7 +8,7 @@
   margin-right: 88px;
   width: 135px;
 
-  svg {
+  img {
     margin-right: 20px;
   }
 
@@ -21,7 +21,7 @@
   margin-right: 48px;
   width: 207px;
 
-  svg {
+  img {
     margin-right: 16px;
   }
 
@@ -93,12 +93,12 @@
     margin-right: 0;
   }
 
-  .contacts__email svg {
+  .contacts__email img {
     width: 25px;
     height: 19px;
   }
 
-  .contacts__phone svg {
+  .contacts__phone img {
     width: 24px;
     height: 24px;
   }
@@ -107,11 +107,6 @@
   .contacts__phone span,
   .contacts__callback {
     display: none;
-  }
-
-  .contacts__email:hover svg,
-  .contacts__phone:hover svg {
-    fill: green;
   }
 }
 
