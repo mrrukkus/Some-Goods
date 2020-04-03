@@ -1,0 +1,21 @@
+.sections-office-wrapper {
+  display: flex;
+  flex-direction: row;
+  min-width: 742px;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+@media (max-width: $tablet) {
+  .sections-office-wrapper {
+    margin-top: 38px;
+    min-width: auto;
+  }
+}
+
+@media (max-width: $mobile) {
+  .sections-office-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+}

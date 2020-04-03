@@ -1,0 +1,41 @@
+.company {
+  font-family: "PT Mono", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  display: flex;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  min-width: 443px;
+  justify-content: space-between;
+  color: #1B2D37;
+  opacity: 0.5;
+  margin-right: 25px;
+  flex-grow: 1;
+  max-width: 457px;
+}
+
+@media (max-width: $tablet) {
+  .company {
+    order: -1;
+    flex-grow: 0;
+    margin: -60px auto 0;
+    position: relative;
+
+    span {
+      margin: 0 auto;
+    }
+  }
+
+  .company__rights-reserved {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile) {
+  .company {
+    margin-top: -107px;
+    min-width: 0;
+  }
+}
