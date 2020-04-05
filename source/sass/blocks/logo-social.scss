@@ -1,17 +1,18 @@
 .logo-social {
+  max-width: 414px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-.logo-social__social-networks {
-  display: flex;
-  width: 112px;
-  justify-content: space-between;
-}
-
 .logo-social__logo {
-  margin-bottom: 55px;
+  margin-bottom: 54px;
+  width: 216px;
+
+  span {
+    margin-bottom: 55px;
+    color: #203C42;
+  }
 }
 
 @media (max-width: $tablet) {
@@ -23,15 +24,11 @@
     margin-bottom: 26px;
     align-items: center;
     width: 100%;
+    max-width: none;
   }
 
   .logo-social__logo {
     margin-bottom: 0;
-  }
-
-  .logo-social__social-networks {
-    width: 112px;
-    justify-content: space-between;
   }
 }
 

@@ -14,6 +14,7 @@
 
   a {
     text-align: center;
+    color: #ffffff;
   }
 }
 
@@ -27,6 +28,7 @@
 
   a {
     text-align: center;
+    color: #ffffff;
   }
 }
 
@@ -76,9 +78,17 @@
   padding: 14px 3.7%;
   box-sizing: content-box;
   background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 @media (max-width: $tablet) {
+
+  .contacts__email a:hover,
+  .contacts__phone a:hover {
+    transform: scale(0.95, 0.95);
+  }
+
   .contacts {
     width: 82px;
   }
@@ -86,21 +96,21 @@
   .contacts__email {
     width: 25px;
     margin-right: 33px;
+
+    img {
+      width: 25px;
+      height: 19px;
+    }
   }
 
   .contacts__phone {
     width: 24px;
     margin-right: 0;
-  }
 
-  .contacts__email img {
-    width: 25px;
-    height: 19px;
-  }
-
-  .contacts__phone img {
-    width: 24px;
-    height: 24px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   .contacts__email span,

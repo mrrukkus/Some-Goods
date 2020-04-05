@@ -6,8 +6,10 @@
   max-width: 1411px;
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 25px;
   margin: 33px auto 0;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: $tablet) {

@@ -4,17 +4,18 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
-  letter-spacing: 0.05em;
+  letter-spacing: -0.7px;
   color: #1B2D37;
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-left: 10px;
 
-  h3 {
+  label {
     text-transform: uppercase;
-    margin: 0 0 29px;
+    margin: 0 0 26px;
     font-weight: 400;
+    letter-spacing: 1px;
   }
 
   input {
@@ -45,16 +46,22 @@
 
   a {
     margin-right: 5px;
+
+    &:hover,
+    &:focus {
+    color : #00b2ff;
+    outline: none;
+    }
   }
 
   li {
-    letter-spacing: 0.03em;
+    letter-spacing: 0;
   }
 }
 
 @media (max-width: $tablet) {
   .site-sections {
-    margin: 0 0 48px;
+    margin: 0 0;
     width: auto;
   }
 
@@ -68,15 +75,11 @@
     position: relative;
     margin: 0;
 
-    h3 {
-      padding: 29px 0 28px;
-      margin: 0;
-    }
-
     label {
-      padding-left: 15px;
-      padding-right: 15px;
+      padding: 29px 15px 28px;
       position: relative;
+      cursor: pointer;
+      margin: 0;
 
       &::before,
       &::after {
@@ -92,13 +95,29 @@
       &::after {
         transform: rotate(90deg);
       }
+
+      &:hover,
+      &:focus {
+        color: #00b2ff;
+      }
     }
 
-    input:checked ~ label::after {
-      display: none;
+    input {
+      display: block;
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+
+      &:focus ~ label {
+        color: #00b2ff;
+      }
+
+      &:checked ~ label::after {
+        display: none;
+      }
     }
   }
-
   .site-sections::before,
   .site-sections::after {
     content: "";

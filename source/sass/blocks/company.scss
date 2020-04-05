@@ -20,7 +20,7 @@
   .company {
     order: -1;
     flex-grow: 0;
-    margin: -60px auto 0;
+    margin: -60px 198px 0;
     position: relative;
 
     span {
@@ -37,5 +37,7 @@
   .company {
     margin-top: -107px;
     min-width: 0;
+    z-index: -1;
+    margin: -113px auto 0;
   }
 }

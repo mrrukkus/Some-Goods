@@ -7,15 +7,14 @@
   color: #1B2D37;
   margin-left: 10px;
 
-  h3 {
-    font-weight: 400;
-    margin: 0 0 29px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
   input {
     display: none;
+  }
+
+  label {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 }
 
@@ -32,6 +31,13 @@
   opacity: 0.5;
   list-style: none;
   padding: 0;
+  margin-top: 25px;
+
+  a:hover,
+  a:focus {
+    color: #00b2ff;
+    outline: none;
+  }
 }
 
 @media (max-width: $tablet) {
@@ -44,6 +50,18 @@
   .office {
     position: relative;
 
+    input {
+      display: block;
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+
+      &:focus ~ label {
+        color: #00b2ff;
+      }
+    }
+
     h3 {
       padding: 29px 0 28px;
       margin: 0;
@@ -51,8 +69,16 @@
 
     label {
       position: relative;
-      padding: 0 15px;
       display: block;
+      cursor: pointer;
+      padding: 29px 15px 28px;
+
+
+
+      &:hover,
+      &:focus {
+        color: #00b2ff;
+      }
     }
 
     label::before,
@@ -89,7 +115,7 @@
     display: none;
     width: auto;
     padding: 0 20px 0 15px;
-    margin: 0 0 29px;
+    margin: 3px 0 29px;
   }
 
   .office input:checked ~ .office__contacts {
