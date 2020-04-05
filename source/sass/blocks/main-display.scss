@@ -6,6 +6,11 @@
   position: relative;
   margin-top: -85px;
   z-index: 1;
+  background-size: 1920px 878px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/main-background@2x.png");
+  }
 }
 
 .main-display__wrapper {
@@ -16,6 +21,12 @@
   box-sizing: border-box;
   display: flex;
   background: url("../img/plates-desktop.png") right 258px no-repeat, url("../img/icon-main-graphics.svg") center -35px no-repeat;
+  background-size: 705px 515px, 1920px 950px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background:url("../img/plates-desktop@2x.png") right 258px no-repeat, url("../img/icon-main-graphics.svg") center -35px no-repeat;
+    background-size: 705px 515px, 1920px 950px;
+  }
 }
 
 .main-display__service {
@@ -25,7 +36,6 @@
   margin-right: 613px;
   display: flex;
   flex-direction: column;
-  // max-width: 726px;
   z-index: 15;
   width: 100%;
 }
