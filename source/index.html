@@ -49,7 +49,29 @@
         </div>
       </main>
       <footer class="footer">
-        <div class="footer__wrapper">
+        <div class="footer__top-wrapper">
+          <section class="callback-form">
+            <div class="callback-form__wrapper">
+              <div class="callback-form__header">
+                <h3>Остались вопросы? Задайте их нам!</h3>
+                <span>Мы проконсультируем Вас бесплатно</span>
+              </div>
+              <form class="callback-form__form" action="#" method="post">
+                <div class="callback-form__name-phone">
+                  <input type="text" name="name" placeholder="Имя">
+                  <input type="tel" name="phone-number" placeholder="Телефон">
+                </div>
+                <textarea name="name" placeholder="Ваш вопрос"></textarea>
+                <div class="callback-form__submit-confirmation">
+                  <button type="submit" name="button">Задать вопрос</button>
+                  <input type="checkbox" name="confirmation" id="confirmation" checked class="visually-hidden">
+                  <label for="confirmation">Я согласен на обработку персональных данных</label>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+        <div class="footer__bottom-wrapper">
           <div class="logo-social">
             <a class="logo-social__logo logo">
               <svg width="52" height="52"><use xlink:href="#icon-logo"></use></svg>
