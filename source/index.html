@@ -6,7 +6,7 @@
       <title>Smart device</title>
       <link href="css/style.min.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="body-container">
       <script src="js/picturefill.min.js">
       </script>
       <div style="display:none">
@@ -25,41 +25,106 @@
           </a>
           <div class="contacts">
             <div class="contacts__email">
-              <a href="mailto:info@sd.ru"><img src="img/icon-email.svg" width="19" height="14"><span>info@sd.ru</span></a>
+              <a href="mailto:info@sd.ru"><img src="img/icon-email.svg" width="19" height="14" alt="email"><span>info@sd.ru</span></a>
             </div>
             <div class="contacts__phone">
-              <a href="tel:+74950005252"><img src="img/icon-phone.svg"><span>+7 (495) 000 52 52</span></a>
+              <a href="tel:+74950005252"><img src="img/icon-phone.svg" width="18" height="18" alt="phone number"><span>+7 (495) 000 52 52</span></a>
             </div>
             <button type="button" class="contacts__callback">Заказать звонок</button>
           </div>
         </div>
       </header>
       <main class="main-index">
-        <div class="main-display">
-          <section class="main-display__wrapper">
+        <section class="main-display">
+          <div class="main-display__wrapper">
             <div class="main-display__service">
               <h1 class="main-display__header">Печатные платы</h1>
               <span>производство и монтаж, поставка комплектующих, блоков и модулей</span>
-              <button type="button" name="get-consultation" class="main-display__get-consultation">
-              <span class="main-display__get-consultation--not-mobile">Получить бесплатную консультацию</span>
-              <span class="main-display__get-consultation--mobile">Бесплатная консультация</span>
-            </button>
+              <a href="#" class="main-display__get-consultation" id="callback-form">
+                <span>Получить бесплатную консультацию</span>
+                <span class="main-display__get-consultation--mobile">Бесплатная консультация</span>
+              </a>
+              <a href="#" class="main-display__scroll" id="advantages">Скролл вниз</a>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+        <section class="advantages">
+          <ul class="advantages__list">
+            <li class="advantages__list-item advantages__list-item--deadlines">
+              <svg width="29" height="35" fill="#00B2FF"><use xlink:href="#icon-stopwatch"></use></svg>
+              <h2>Оперативные сроки</h2>
+              <span>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</span>
+            </li>
+            <li class="advantages__list-item advantages__list-item--suppliers">
+              <svg width="35" height="35" fill="#00B2FF"><use xlink:href="#icon-hired"></use></svg>
+              <h2>Крупные поставщики</h2>
+              <span>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</span>
+            </li>
+            <li class="advantages__list-item advantages__list-item--confidentiality">
+              <svg width="36" height="31" fill="#00B2FF"><use xlink:href="#icon-detective"></use></svg>
+              <h2>Полная конфиденциальность</h2>
+              <span>По желанию клиента мы обеспечиваем полную конфеденциальность.</span>
+            </li>
+            <li class="advantages__list-item advantages__list-item--personality">
+              <svg width="35" height="35" fill="#00B2FF"><use xlink:href="#icon-tag"></use></svg>
+              <h2>Персонализация стоимости</h2>
+              <span>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</span>
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+          <div class="about__wrapper">
+            <div class="about__container">
+              <h3>О компании</h3>
+              <div>
+                Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+              <p>
+                Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__hidden">..</span><span class="about__visible"> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
+              </p>
+              </div>
+              <button type="button">Подробнее</button>
+            </div>
+          </div>
+        </section>
+        <section class="goods-services">
+          <div class="goods-services__wrapper">
+            <h4>Service Device предлагает следующие товары и услуги
+            </h4>
+            <ul class="goods-services__list">
+              <li>
+                <a href="#" class="goods-services__list-item goods-services__list-item--production">
+                  <h5>Производство печатных плат</h5>
+                  <div></div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="goods-services__list-item goods-services__list-item--installation">
+                  <h5>Монтаж печатных плат</h5>
+                  <div></div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="goods-services__list-item goods-services__list-item--parts">
+                  <h5>Комплектующие для светотехники</h5>
+                  <div></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__top-wrapper">
           <section class="callback-form">
             <div class="callback-form__wrapper">
               <div class="callback-form__header">
-                <h3>Остались вопросы? Задайте их нам!</h3>
+                <h6>Остались вопросы? Задайте их нам!</h6>
                 <span>Мы проконсультируем Вас бесплатно</span>
               </div>
               <form class="callback-form__form" action="#" method="post">
                 <div class="callback-form__name-phone">
                   <input type="text" name="name" placeholder="Имя">
-                  <input type="tel" name="phone-number" placeholder="Телефон">
+                  <input type="tel" name="phone-number" placeholder="Телефон" class="phone-mask">
                 </div>
                 <textarea name="name" placeholder="Ваш вопрос"></textarea>
                 <div class="callback-form__submit-confirmation">
@@ -127,5 +192,26 @@
           </div>
         </div>
       </footer>
+      <div class="popup-form popup-form--disabled">
+        <div class="popup-form__container">
+          <h6>Закажите звонок</h6>
+          <span>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
+          <form class="popup-form__form" action="#" method="post">
+            <input type="text" name="name" placeholder="Имя" class="popup-form__form-name" required>
+            <input type="text" name="phone-number" placeholder="Телефон"
+            class="popup-form__form-phone phone-mask" required>
+            <textarea name="name" placeholder="Ваш вопрос" class="popup-form__form-question" required></textarea>
+            <div class="popup-form__submit-confirmation">
+              <button type="submit" name="button" class="popup-form__form-submit">Отправить</button>
+              <input type="checkbox" name="confirmation" id="popup-confirmation" checked class="visually-hidden">
+              <label for="popup-confirmation">Я согласен на обработку персональных данных</label>
+            </div>
+          </form>
+          <button type="button" name="button" aria-label="Закрыть окно" class="popup-form__close"></button>
+        </div>
+        <div class="popup-form__overlay"></div>
+      </div>
+      <script src="js/script.js">
+      </script>
     </body>
   </html>

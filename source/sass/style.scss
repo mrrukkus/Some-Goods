@@ -1,6 +1,7 @@
 @import "global.scss";
 @import "fonts.scss";
 @import "variables.scss";
+@import "blocks/body-container.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-index.scss";
@@ -14,4 +15,8 @@
 @import "blocks/sections-office-wrapper.scss";
 @import "blocks/logo-social.scss";
 @import "blocks/social-networks.scss";
-@import "blocks/callback-form.scss"
+@import "blocks/callback-form.scss";
+@import "blocks/advantages.scss";
+@import "blocks/about.scss";
+@import "blocks/goods-services.scss";
+@import "blocks/popup-form.scss"

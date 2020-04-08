@@ -25,6 +25,8 @@
     align-items: center;
     width: 100%;
     max-width: none;
+    position: relative;
+    z-index: 3;
   }
 
   .logo-social__logo {
