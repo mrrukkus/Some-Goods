@@ -49,27 +49,8 @@
   margin: 15px;
   box-sizing: border-box;
   position: relative;
-
-  h2 {
-    font-family: "Roboto Condensed", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 34px;
-    color: #00B2FF;
-    padding-top: 58px;
-    margin: 0;
-    margin-bottom: 15px;
-  }
-
-  span {
-    font-family: "PT Mono", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #666666;
-  }
+  display: flex;
+  flex-direction: column;
 
   svg {
     position: absolute;
@@ -77,15 +58,36 @@
     top: 42px;
   }
 
-
   &:hover {
     background-color: #00B2FF;
 
-    h2, span {
+    span {
       color: #ffffff;
     }
   }
 }
+
+.advantages__list-item-header {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #00B2FF;
+  padding-top: 58px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.advantages__list-item-description {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+}
+
 
 .advantages__list-item:hover svg {
   fill: #ffffff;
@@ -111,12 +113,7 @@
 
   .advantages__list-item {
     min-height: 232px;
-    padding: 24px 20px 19px 24px;
-
-    h2 {
-      padding-top: 43px;
-      margin-bottom: 9px;
-    }
+    padding: 24px 11px 19px 24px;
 
     svg {
       top: 22px;
@@ -124,13 +121,23 @@
     }
   }
 
+  .advantages__list-item-header {
+    padding-top: 43px;
+    margin-bottom: 9px;
+  }
+
+  span {
+    letter-spacing: 0.28px;
+  }
+
+
   .advantages__list-item--suppliers svg {
     width: 32px;
     height: 32px;
   }
 
   .advantages__list-item--confidentiality {
-    h2 {
+    .advantages__list-item-header {
       padding-top: 40px;
     }
 
@@ -155,17 +162,19 @@
     width: auto;
     margin: 0 0 20px;
     padding-bottom: 25px;
+    padding-right: 16px;
+  }
 
-    h2 {
-      padding-top: 46px;
-      font-size: 20px;
-      line-height: 140.62%;
-    }
+  .advantages__list-item-header {
+    padding-top: 46px;
+    font-size: 20px;
+    line-height: 140.62%;
+  }
 
-    span {
-      font-size: 16px;
-      line-height: 22px;
-    }
+  .advantages__list-item-description {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
   }
 
   .advantages__list-item--suppliers {

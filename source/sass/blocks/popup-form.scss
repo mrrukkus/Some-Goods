@@ -23,8 +23,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
 
-  h6 {
-    font-family: "Roboto Condensed", sans-serif;
+  h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
@@ -34,7 +34,7 @@
   }
 
   span {
-    font-family: "PT Mono", sans-serif;
+    font-family: "PT Mono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -90,7 +90,7 @@
 
   input,
   textarea {
-    font-family: PT Mono;
+    font-family: "PT Mono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -127,7 +127,7 @@
     padding: 14px 0;
     border-radius: 5px;
     background-color: transparent;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -149,7 +149,7 @@
   }
 
   label {
-    font-family: "PT Mono", sans-serif;
+    font-family: "PT Mono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

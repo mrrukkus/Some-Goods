@@ -3,12 +3,11 @@
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Тестовое задание Smart Device">
       <title>Smart device</title>
       <link href="css/style.min.css" rel="stylesheet">
     </head>
     <body class="body-container">
-      <script src="js/picturefill.min.js">
-      </script>
       <div style="display:none">
         <include src="build/img/sprite.svg"></include>
       </div>
@@ -41,8 +40,8 @@
               <h1 class="main-display__header">Печатные платы</h1>
               <span>производство и монтаж, поставка комплектующих, блоков и модулей</span>
               <a href="#" class="main-display__get-consultation" id="callback-form">
-                <span class="main-display__get-consultation--not-mobile">Получить бесплатную консультацию</span>
-                <span class="main-display__get-consultation--mobile">Бесплатная консультация</span>
+                <span class="main-display__text-link main-display__text-link--not-mobile">Получить бесплатную консультацию</span>
+                <span class="main-display__text-link main-display__text-link--mobile">Бесплатная консультация</span>
               </a>
               <a href="#" class="main-display__scroll" id="advantages">Скролл вниз</a>
             </div>
@@ -52,30 +51,30 @@
           <ul class="advantages__list">
             <li class="advantages__list-item advantages__list-item--deadlines">
               <svg width="29" height="35" fill="#00B2FF"><use xlink:href="#icon-stopwatch"></use></svg>
-              <h2>Оперативные сроки</h2>
-              <span>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</span>
+              <span class="advantages__list-item-header">Оперативные сроки</span>
+              <span class="advantages__list-item-description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</span>
             </li>
             <li class="advantages__list-item advantages__list-item--suppliers">
               <svg width="35" height="35" fill="#00B2FF"><use xlink:href="#icon-hired"></use></svg>
-              <h2>Крупные поставщики</h2>
-              <span>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</span>
+              <span class="advantages__list-item-header">Крупные поставщики</span>
+              <span class="advantages__list-item-description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</span>
             </li>
             <li class="advantages__list-item advantages__list-item--confidentiality">
               <svg width="36" height="31" fill="#00B2FF"><use xlink:href="#icon-detective"></use></svg>
-              <h2>Полная конфиденциальность</h2>
-              <span>По желанию клиента мы обеспечиваем полную конфеденциальность.</span>
+              <span class="advantages__list-item-header">Полная конфиденциальность</span>
+              <span class="advantages__list-item-description">По желанию клиента мы обеспечиваем полную конфеденциальность.</span>
             </li>
             <li class="advantages__list-item advantages__list-item--personality">
               <svg width="35" height="35" fill="#00B2FF"><use xlink:href="#icon-tag"></use></svg>
-              <h2>Персонализация стоимости</h2>
-              <span>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</span>
+              <span class="advantages__list-item-header">Персонализация стоимости</span>
+              <span class="advantages__list-item-description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</span>
             </li>
           </ul>
         </section>
         <section class="about">
           <div class="about__wrapper">
             <div class="about__container">
-              <h3>О компании</h3>
+              <h2>О компании</h2>
               <div>
                 Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
               <p>
@@ -88,24 +87,24 @@
         </section>
         <section class="goods-services">
           <div class="goods-services__wrapper">
-            <h4>Service Device предлагает следующие товары и услуги
-            </h4>
+            <h2>Service Device предлагает следующие товары и услуги
+            </h2>
             <ul class="goods-services__list">
               <li>
                 <a href="#" class="goods-services__list-item goods-services__list-item--production">
-                  <h5>Производство печатных плат</h5>
+                  <span class="goods-services__list-item-header">Производство печатных плат</span>
                   <div></div>
                 </a>
               </li>
               <li>
                 <a href="#" class="goods-services__list-item goods-services__list-item--installation">
-                  <h5>Монтаж печатных плат</h5>
+                  <span class="goods-services__list-item-header">Монтаж печатных плат</span>
                   <div></div>
                 </a>
               </li>
               <li>
                 <a href="#" class="goods-services__list-item goods-services__list-item--parts">
-                  <h5>Комплектующие для светотехники</h5>
+                  <span class="goods-services__list-item-header">Комплектующие для светотехники</span>
                   <div></div>
                 </a>
               </li>
@@ -114,27 +113,30 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__top-wrapper">
-          <section class="callback-form">
-            <div class="callback-form__wrapper">
-              <div class="callback-form__header">
-                <h6>Остались вопросы? Задайте их нам!</h6>
-                <span>Мы проконсультируем Вас бесплатно</span>
+        <div class="footer__top">
+          <div class="footer__top-wrapper">
+            <section class="callback-form">
+              <div class="callback-form__wrapper">
+                <div class="callback-form__header">
+                  <h2>Остались вопросы? Задайте их нам!</h2>
+                  <span>Мы проконсультируем Вас бесплатно</span>
+                </div>
+                <form class="callback-form__form" action="#" method="post">
+                  <div class="callback-form__name-phone">
+                    <input type="text" name="name" placeholder="Имя" aria-label="Имя" required>
+                    <label for="name" class="visually-hidden"></label>
+                    <input type="tel" name="phone-number" placeholder="Телефон" class="phone-mask" aria-label="Номер телефона" required>
+                  </div>
+                  <textarea name="name" placeholder="Ваш вопрос" aria-label="Ваш вопрос" required></textarea>
+                  <div class="callback-form__submit-confirmation">
+                    <button type="submit" name="button">Задать вопрос</button>
+                    <input type="checkbox" name="confirmation" id="confirmation" checked class="visually-hidden">
+                    <label for="confirmation">Я согласен на обработку персональных данных</label>
+                  </div>
+                </form>
               </div>
-              <form class="callback-form__form" action="#" method="post">
-                <div class="callback-form__name-phone">
-                  <input type="text" name="name" placeholder="Имя">
-                  <input type="tel" name="phone-number" placeholder="Телефон" class="phone-mask">
-                </div>
-                <textarea name="name" placeholder="Ваш вопрос"></textarea>
-                <div class="callback-form__submit-confirmation">
-                  <button type="submit" name="button">Задать вопрос</button>
-                  <input type="checkbox" name="confirmation" id="confirmation" checked class="visually-hidden">
-                  <label for="confirmation">Я согласен на обработку персональных данных</label>
-                </div>
-              </form>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
         <div class="footer__bottom-wrapper">
           <div class="logo-social">
@@ -148,15 +150,15 @@
               </div>
             </a>
             <div class="social-networks">
-              <a href="#" class="social-networks__links"><svg width="27" height="27" fill="#CDCDCD"><use xlink:href="#icon-facebook"></use></svg></a>
-              <a href="#" class="social-networks__links"><svg width="27" height="27" fill="#CDCDCD"><use xlink:href="#icon-ok"></use></svg></a>
-              <a href="#" class="social-networks__links"><svg width="27" height="27" fill="#CDCDCD"><use xlink:href="#icon-vk"></use></svg></a>
+              <a href="#" class="social-networks__links"><span class="visually-hidden">Facebook</span><svg width="27" height="27" fill="#CDCDCD"><use xlink:href="#icon-facebook"></use></svg></a>
+              <a href="#" class="social-networks__links"><span class="visually-hidden">OK</span><svg width="27" height="27" fill="#CDCDCD"><use xlink:href="#icon-ok"></use></svg></a>
+              <a href="#" class="social-networks__links"><span class="visually-hidden">VK</span><svg width="27" height="27" fill="#CDCDCD"><use xlink:href="#icon-vk"></use></svg></a>
             </div>
           </div>
           <div class="sections-office-wrapper">
             <section class="site-sections">
-              <input type="checkbox" name="sections" id="sections">
-              <label for="sections">Разделы сайта</label>
+              <input type="checkbox" id="sections" class="sections-office-wrapper__checkbox-accordion">
+              <label for="sections" class="sections-office-wrapper__label-accordion">Разделы сайта</label>
               <div class="site-sections__links-wrapper">
                 <ul class="site-sections__links">
                   <li><a href="#">О компании</a></li>
@@ -172,8 +174,8 @@
               </div>
             </section>
             <section class="office">
-              <input type="checkbox" name="office" id="office">
-              <label for="office">Наш офис</label>
+              <input type="checkbox" id="office" class="sections-office-wrapper__checkbox-accordion">
+              <label for="office" class="sections-office-wrapper__label-accordion">Наш офис</label>
               <ul class="office__contacts">
                 <li>г. Мытищи, Олимпийский проспект, д.10</li>
                 <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
@@ -194,11 +196,12 @@
       </footer>
       <div class="popup-form popup-form--disabled">
         <div class="popup-form__container">
-          <h6>Закажите звонок</h6>
+          <h2>Закажите звонок</h2>
           <span>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</span>
           <form class="popup-form__form" action="#" method="post">
-            <input type="text" name="name" placeholder="Имя" class="popup-form__form-name" required>
-            <input type="text" name="phone-number" placeholder="Телефон"
+            <input type="text" name="name" placeholder="Имя" class="popup-form__form-name" aria-label="Имя" id="name" required>
+            <label for="name" class="visually-hidden"></label>
+            <input type="tel" name="phone-number" placeholder="Телефон"
             class="popup-form__form-phone phone-mask" required>
             <textarea name="name" placeholder="Ваш вопрос" class="popup-form__form-question" required></textarea>
             <div class="popup-form__submit-confirmation">
@@ -211,7 +214,7 @@
         </div>
         <div class="popup-form__overlay"></div>
       </div>
-      <script src="js/script.js">
+      <script src="js/main.js">
       </script>
     </body>
   </html>

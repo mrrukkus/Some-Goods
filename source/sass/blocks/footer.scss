@@ -2,6 +2,10 @@
   width: 100%;
   position: relative;
   padding-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
 
   &::before {
     content: "";
@@ -49,7 +53,7 @@
   .footer__bottom-wrapper {
     padding: 19px 25px 0;
     flex-direction: row;
-    margin-top: 0;
+    margin: 0;
     position: relative;
 
     &::before,

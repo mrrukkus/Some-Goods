@@ -1,3 +1,8 @@
+'use strict';
+
+const bodyItem = document.body;
+const accordionCheckboxes = document.querySelectorAll('.sections-office-wrapper__checkbox-accordion');
+const accordionLabels = document.querySelectorAll('.sections-office-wrapper__label-accordion');
 const popupForm =  document.querySelector('.popup-form');
 const closePopupButton = document.querySelector('.popup-form__close');
 const popupOverlay = document.querySelector('.popup-form__overlay');
@@ -9,10 +14,21 @@ const popupPhone = document.querySelector('.popup-form__form-phone');
 const popupQuestion = document.querySelector('.popup-form__form-question');
 const popupSubmitButton = document.querySelector('.popup-form__form-submit');
 
+const setCheckHandler = function () {
+  const labelAttribute = this.getAttribute('for');
+  const checkbox = document.querySelector('#' + labelAttribute);
+  if (!checkbox.checked) {
+    Array.prototype.forEach.call(accordionCheckboxes, function (checkbox) {
+      checkbox.checked = false;
+    });
+  }
+};
+
 const openPopupHandler = function (event) {
   const closePopup = function () {
     popupForm.classList.add('popup-form--disabled');
-    window.removeEventListener('keydown', closePopupKeyHandler)
+    window.removeEventListener('keydown', closePopupKeyHandler);
+    bodyItem.style.overflowY = 'auto';
   }
   const closePopupHandler = function () {
     closePopup();
@@ -24,16 +40,14 @@ const openPopupHandler = function (event) {
     }
   }
   const submitFormHandler = function (evt) {
-    evt.preventDefault();
     localStorage.setItem('name', popupName.value);
-    localStorage.setItem('phone', popupName.value);
+    localStorage.setItem('phone', popupPhone.value);
     localStorage.setItem('question', popupQuestion.value);
-    console.log(localStorage);
-    closePopup();
   }
 
 
   popupForm.classList.remove('popup-form--disabled');
+  bodyItem.style.overflowY = 'hidden';
   inputName.focus();
   closePopupButton.addEventListener('click', closePopupHandler);
   popupOverlay.addEventListener('click', closePopupHandler);
@@ -52,38 +66,42 @@ Array.prototype.forEach.call(anchors, function (anchor) {
   };
 });
 
-window.addEventListener("DOMContentLoaded", function() {
+Array.prototype.forEach.call(accordionLabels, function (label) {
+  label.addEventListener('click', setCheckHandler);
+});
+
+window.addEventListener('DOMContentLoaded', function() {
     [].forEach.call( document.querySelectorAll('.phone-mask'), function(input) {
     var keyCode;
     function mask(event) {
         event.keyCode && (keyCode = event.keyCode);
         var pos = this.selectionStart;
         if (pos < 3) event.preventDefault();
-        var matrix = "+7(___)_______",
+        var matrix = '+7(___)_______',
             i = 0,
-            def = matrix.replace(/\D/g, ""),
-            val = this.value.replace(/\D/g, ""),
+            def = matrix.replace(/\D/g, ''),
+            val = this.value.replace(/\D/g, ''),
             new_value = matrix.replace(/[_\d]/g, function(a) {
                 return i < val.length ? val.charAt(i++) || def.charAt(i) : a
             });
-        i = new_value.indexOf("_");
+        i = new_value.indexOf('_');
         if (i != -1) {
             i < 3 && (i = 3);
             new_value = new_value.slice(0, i)
         }
         var reg = matrix.substr(0, this.value.length).replace(/_+/g,
             function(a) {
-                return "\\d{1," + a.length + "}"
-            }).replace(/[+()]/g, "\\$&");
-        reg = new RegExp("^" + reg + "$");
+                return '\\d{1,' + a.length + '}'
+            }).replace(/[+()]/g, '\\$&');
+        reg = new RegExp('^' + reg + '$');
         if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
-        if (event.type == "blur" && this.value.length < 5)  this.value = ""
+        if (event.type == 'blur' && this.value.length < 5)  this.value = ''
     }
 
-    input.addEventListener("input", mask, false);
-    input.addEventListener("focus", mask, false);
-    input.addEventListener("blur", mask, false);
-    input.addEventListener("keydown", mask, false);
+    input.addEventListener('input', mask, false);
+    input.addEventListener('focus', mask, false);
+    input.addEventListener('blur', mask, false);
+    input.addEventListener('keydown', mask, false);
   });
 });
 

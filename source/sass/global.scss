@@ -5,6 +5,10 @@
   a {
     text-decoration: none;
   }
+
+  input, textarea {
+    cursor: pointer;
+  }
 }
 
 .visually-hidden {

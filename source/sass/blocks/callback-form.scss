@@ -49,8 +49,8 @@
   color: white;
   margin: 0 15px 51px 8px;
 
-  h6 {
-    font-family: "Roboto Condensed", sans-serif;
+  h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -59,7 +59,7 @@
   }
 
   span {
-    font-family: PT Mono;
+    font-family: "PT Mono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -75,7 +75,7 @@
 
   textarea,
   input {
-    font-family: "PT Mono", sans-serif;
+    font-family: "PT Mono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -107,7 +107,7 @@
     content: "";
     width: 203px;
     height: 203px;
-    background-image: url("../../img/icon-triangle.svg");
+    background-image: url("../img/icon-triangle.svg");
     background-size: 314px 255px;
     position: absolute;
     top: -132px;
@@ -120,7 +120,7 @@
     content: "";
     width: 359px;
     height: 322px;
-    background-image: url("../../img/icon-triangle.svg");
+    background-image: url("../img/icon-triangle.svg");
     background-size: 576px 404px;
     position: absolute;
     top: 64px;
@@ -144,7 +144,7 @@
   display: flex;
 
   button {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -161,7 +161,7 @@
   }
 
   label {
-    font-family: "PT Mono";
+    font-family: "PT Mono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -233,7 +233,7 @@
     margin-bottom: 55px;
     margin-left: 16px;
 
-    h6 {
+    h2 {
       font-size: 32px;
       line-height: 140.62%;
       margin: 0 0 15px;
@@ -277,7 +277,7 @@
   .callback-form__header {
     margin-bottom: 25px;
 
-    h6 {
+    h2 {
       font-size: 28px;
       margin-bottom: 12px;
     }
@@ -318,6 +318,14 @@
 
     label {
       align-self: auto;
+
+      &::before {
+        top: -1px;
+      }
+    }
+
+    input:checked ~ label::after {
+      top: 3px;
     }
   }
 }

@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  margin-bottom: 113px;
+  margin-bottom: 107px;
   position: relative;
 
   &::before {
@@ -47,8 +47,8 @@
     }
   }
 
-  h3 {
-    font-family: "Roboto Condensed", sans-serif;
+  h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -59,7 +59,7 @@
   }
 
   div {
-    font-family: "PT Mono", sans-serif;
+    font-family: "PT Mono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -72,7 +72,7 @@
   button {
     width: 180px;
     padding: 14px 0 13px;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -137,7 +137,7 @@
       left: -9px;
     }
 
-    h3 {
+    h2 {
       font-size: 32px;
       line-height: 140.62%;
       margin-bottom: 25px;
@@ -172,14 +172,19 @@
     max-width: 737px;
     padding: 0;
 
-    h3 {
+    h2 {
       font-size: 28px;
       line-height: 140.62%;
+      margin-top: 24px;
       margin-bottom: 21px;
     }
 
+    div {
+      margin: 0;
+    }
+
     p {
-      margin-top: 39px;
+      margin-top: 38px;
       margin-bottom: 29px;
     }
 
