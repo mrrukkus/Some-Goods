@@ -41,6 +41,7 @@
     background-size: 220px 317px;
     top: 4px;
     left: -5px;
+    z-index: -1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/2005@2x.png");

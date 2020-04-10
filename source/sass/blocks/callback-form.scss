@@ -142,6 +142,7 @@
 .callback-form__submit-confirmation {
   margin: 0 15px 0 12px;
   display: flex;
+  align-items: center;
 
   button {
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -310,6 +311,7 @@
   .callback-form__submit-confirmation {
     flex-direction: column;
     margin-left: 15px;
+    align-items: flex-start;
 
     button {
       width: 100%;
