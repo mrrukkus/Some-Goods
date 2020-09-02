@@ -55,14 +55,14 @@
 .contacts__email a:hover,
 .contacts__phone a:hover,
 .contacts__callback:hover {
-  color: $style-blue;
+  color: $style-color;
 }
 
 .contacts__email a:focus,
 .contacts__phone a:focus,
 .contacts__callback:focus {
   outline: none;
-  color: $style-blue;
+  color: $style-color;
   transform: scale(0.95, 0.95);
 }
 

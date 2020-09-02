@@ -1,18 +1,19 @@
 "use strict";
 
-var gulp = require("gulp");
-var plumber = require("gulp-plumber");
-var sourcemap = require("gulp-sourcemaps");
-var rename = require("gulp-rename");
-var sass = require("gulp-sass");
-var postcss = require("gulp-postcss");
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");
-var autoprefixer = require("autoprefixer");
-var csso = require("gulp-csso");
-var server = require("browser-sync").create();
-var svgstore = require("gulp-svgstore");
-var del = require("del");
+const gulp = require("gulp");
+const plumber = require("gulp-plumber");
+const sourcemap = require("gulp-sourcemaps");
+const rename = require("gulp-rename");
+const sass = require("gulp-sass");
+const postcss = require("gulp-postcss");
+const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
+const autoprefixer = require("autoprefixer");
+const csso = require("gulp-csso");
+const server = require("browser-sync").create();
+const svgstore = require("gulp-svgstore");
+const del = require("del");
+const ghPages = require('gulp-gh-pages');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -89,3 +90,8 @@ gulp.task("build", gulp.series(
 "html"
 ));
 gulp.task("start", gulp.series("build", "server"));
+
+gulp.task("deploy", function() {
+  return gulp.src("./build/**/*")
+    .pipe(ghPages());
+});

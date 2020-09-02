@@ -2,11 +2,10 @@
   background-color: #1B2D37;
   width: 100%;
   background-image: url("../img/main-background.png");
-  background-position: center top;
   position: relative;
   margin-top: -85px;
   z-index: 1;
-  background-size: 1920px 878px;
+  background-size: 100% 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/main-background@2x.png");
@@ -28,12 +27,12 @@
     position: absolute;
     left: 55%;
     top: 258px;
-    background: url("../img/plates-desktop.png") center center no-repeat, url("../img/icon-main-graphics.svg") -1038px -293px no-repeat;
-    background-size: 705px 515px, 1920px 950px;
+    background: url("../img/device-desktop.png") center center no-repeat, url("../img/icon-main-graphics.svg") -1038px -293px no-repeat;
+    background-size: 462px 404px, 1920px 950px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/plates-desktop@2x.png") center center no-repeat, url("../img/icon-main-graphics.svg") -1038px -293px no-repeat;
-      background-size: 705px 515px, 1920px 950px;
+      background: url("../img/device-desktop@2x.png") center center no-repeat, url("../img/icon-main-graphics.svg") -1038px -293px no-repeat;
+      background-size: 462px 404px, 1920px 950px;
     }
   }
 }
@@ -85,7 +84,7 @@
 }
 
 .main-display__get-consultation {
-  background: #00B2FF;
+  background: $style-color;
   border: none;
   border-radius: 5px;
   margin-left: 98px;
@@ -143,11 +142,6 @@
 }
 
 @media (max-width: $tablet) {
-  .main-display {
-    background-size: 1514px 692px;
-    background-position: center 9px;
-  }
-
   .main-display__wrapper {
     padding-left: 88px;
 
@@ -157,11 +151,11 @@
       left: auto;
       right: 0;
       top: 97px;
-      background: url("../img/plates-tablet.png") 53px 32px no-repeat, url("../img/icon-main-graphics.svg") -829px -241px no-repeat;
+      background: url("../img/device-tablet.png") 53px 32px no-repeat, url("../img/icon-main-graphics.svg") -829px -241px no-repeat;
       background-size: auto, 1514px 749px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background: url("../img/plates-tablet@2x.png") 53px 32px no-repeat, url("../img/icon-main-graphics.svg") -829px -241px no-repeat;
+        background: url("../img/device-tablet@2x.png") 53px 32px no-repeat, url("../img/icon-main-graphics.svg") -829px -241px no-repeat;
         background-size: 260px 340px, 1514px 749px;
       }
     }
@@ -203,16 +197,11 @@
 }
 
 @media (max-width: $mobile) {
-  .main-display {
-    background-size: 1446px 661px;
-    background-position: -624px 17px;
-  }
-
   .main-display__wrapper {
     padding-left: 15px;
 
     &::before {
-      background: url("../img/plates-mobile.png") right 26px no-repeat, url("../img/icon-main-graphics.svg") -631px -227px no-repeat;
+      background: url("../img/device-mobile.png") right 26px no-repeat, url("../img/icon-main-graphics.svg") -631px -227px no-repeat;
       background-size: auto, 1446px 715px;
     }
   }

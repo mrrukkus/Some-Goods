@@ -50,7 +50,7 @@
 
     &:hover,
     &:focus {
-    color : #00b2ff;
+    color : $style-color;
     outline: none;
     }
   }
@@ -99,7 +99,7 @@
 
       &:hover,
       &:focus {
-        color: #00b2ff;
+        color: $style-color;
       }
     }
 
@@ -111,7 +111,7 @@
       height: 1px;
 
       &:focus ~ label {
-        color: #00b2ff;
+        color: $style-color;
       }
 
       &:checked ~ label::after {

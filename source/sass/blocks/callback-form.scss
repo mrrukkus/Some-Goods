@@ -28,17 +28,17 @@
 
   &::after {
     content: "";
-    width: 511px;
-    height: 288px;
+    width: 440px;
+    height: 404px;
     position: absolute;
-    top: 71px;
-    left: -3px;
-    background-image: url("../img/plane-desktop.png");
-    background-size: 511px 288px;
+    top: 41px;
+    left: 87px;
+    background-image: url("../img/mail.png");
+    background-size: 440px 404px;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/plane-desktop@2x.png");
+      background-image: url("../img/mail@2x.png");
     }
   }
 }
