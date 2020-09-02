@@ -72,7 +72,7 @@ Array.prototype.forEach.call(accordionLabels, function (label) {
 
 window.addEventListener('DOMContentLoaded', function() {
     [].forEach.call(document.querySelectorAll('.phone-mask'), function(input) {
-    const keyCode;
+    let keyCode;
     function mask(event) {
         event.keyCode && (keyCode = event.keyCode);
         const pos = this.selectionStart;
